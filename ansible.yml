@@ -2,7 +2,7 @@
   become: True
   tasks: 
     - name: Install packages
-     apt-get:
+     apt:
       name: "httpd"
       state: "present"
     - name: Start apace server 
